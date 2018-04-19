@@ -1,0 +1,16 @@
+$cssCore: false;
+$cssHelpers: false;
+$devMode: false;
+$gutter: 0 !default;
+$max-width: 1440px !default;
+@import 'ed-grid';
+@mixin paddingMauro {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.grid-container {
+  @include grid('.grid-item', 1 2 3 4, 1.5em)
+}
+$oscuro: #4D4952;
+$claro: #fff;
