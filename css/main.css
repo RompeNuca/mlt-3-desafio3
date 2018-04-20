@@ -27,16 +27,16 @@ a:hover {
   text-decoration: underline;
 }
 
-.ed-container {
+.ed-container, .top, .perfiles {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1440px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
-.ed-item {
+.ed-item, .perfiles .perfilBox {
   margin: 0;
   padding-left: 0;
   padding-right: 0;
@@ -129,4 +129,140 @@ body {
     width: 100%;
     margin: 0;
   }
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+.btn {
+  color: #794EFD;
+  border: 2px solid #794EFD;
+  padding: 1em;
+  background-color: #fff;
+  margin: 0.5em;
+  border-radius: 1em;
+}
+
+.btn:hover {
+  background-color: #794EFD;
+  color: #fff;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #4D4952;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4em;
+  margin-top: 3em;
+}
+
+.top .logo {
+  display: flex;
+  flex-wrap: wrap;
+  height: 6em;
+  justify-content: center;
+  align-items: center;
+}
+
+.top .logo img {
+  width: 6em;
+}
+
+.top h3 {
+  font-size: 1.6em;
+  padding: 1em;
+  color: #fff;
+  font-family: roboto;
+}
+
+.top .filtros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+
+.perfiles {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #4D4952;
+  margin-top: 3em;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.perfiles .perfilBox {
+  width: 33.33%;
+  padding: 0.5em;
+}
+
+.perfiles .active {
+  width: 66.66%;
+}
+
+.perfiles .perfil {
+  border-radius: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+  background-color: #fff;
+}
+
+.perfiles .perfil .foto {
+  display: flex;
+  flex-wrap: wrap;
+  width: 10em;
+  height: 10em;
+}
+
+.perfiles .perfil h4 {
+  font-size: 1.3em;
+  padding: 1em;
+  color: #794EFD;
+  font-family: roboto;
+}
+
+.perfiles .perfil .redes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.perfiles .perfil .redes .red {
+  display: flex;
+  flex-wrap: wrap;
+  width: 2em;
+  height: 2em;
+  background-image: url("../img/redes.svg");
+}
+
+.perfiles .perfil .btn {
+  text-align: center;
+  width: 100%;
+}
+
+.perfiles .perfil .trabajos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.perfiles .perfil .trabajos .trabajo {
+  width: 31%;
+  height: 12em;
+  background-color: #4D4952;
+  border-radius: 2em;
 }

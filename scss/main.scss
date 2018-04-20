@@ -2,7 +2,7 @@ $cssCore: false;
 $cssHelpers: false;
 $devMode: false;
 $gutter: 0 !default;
-$max-width: 1440px !default;
+$max-width: 1140px !default;
 @import 'ed-grid';
 @mixin paddingMauro {
   padding-left: 2em;
@@ -14,3 +14,119 @@ $max-width: 1440px !default;
 }
 $oscuro: #4D4952;
 $claro: #fff;
+$violeta: #794EFD;
+$font1: roboto;
+
+h1,h2,h3,h4,h5,p{
+  margin: 0;
+}
+
+.btn{
+  color: $violeta;
+  border: 2px solid $violeta;
+  padding: 1em;
+  background-color: $claro;
+  margin: 0.5em;
+  border-radius: 1em;
+  &:hover{
+    background-color: $violeta;
+    color: $claro;
+  }
+}
+
+.top{
+  @include flex;
+  @include edContainer;
+  background-color: $oscuro;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4em;
+  margin-top: 3em;
+  .logo{
+    @include flex;
+    height: 6em;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 6em;
+    }
+  }
+  h3{
+    font-size: 1.6em;
+    padding: 1em;
+    color: $claro;
+    font-family: roboto;
+  }
+  .filtros{
+    @include flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+  }
+}
+
+.perfiles{
+  @include flex;
+  @include edContainer;
+  background-color: $oscuro;
+  margin-top: 3em;
+  border-radius: 1em;
+  padding: 1em;
+  .perfilBox{
+    @include edItem(33.33);
+    padding: 0.5em;
+  }
+  .active{
+    width: 66.66%;
+  }
+  .perfil{
+    border-radius: 0.5em;
+    @include flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    background-color: $claro;
+    .foto{
+      @include flex;
+      width: 10em;
+      height: 10em;
+    }
+    h4{
+      font-size: 1.3em;
+      padding: 1em;
+      color: $violeta;
+      font-family: roboto;
+    }
+    .redes{
+      @include flex;
+      flex-direction: row;
+      width: 60%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+      .red{
+        @include flex;
+        width: 2em;
+        height: 2em;
+        background-image: url("../img/redes.svg");
+      }
+    }
+    .btn{
+      text-align: center;
+      width: 100%;
+    }
+    .trabajos{
+      @include flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      .trabajo{
+        width: 31%;
+        height: 12em;
+        background-color: $oscuro;
+        border-radius: 2em;
+      }
+    }
+  }
+}
